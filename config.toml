@@ -1,0 +1,211 @@
+# Site settings
+baseurl = "https://puppaint.com"
+languageCode = "en-us"
+title = "Puppaint"
+theme = "agency"
+
+# Enter your tracking code to enable Google Analytics
+googleAnalytics = "UA-105800567-1"
+
+[params]
+  # You can use Markdown syntax for urls [text](//url.to/source) or
+  # most longer texts.
+  #
+  # All icons using Fontawesome's icon font. Look at fortawesome.github.io/Font-Awesome/icons/
+  # for more icons. The icons are represented by their corresponding
+  # CSS class.
+
+  # To provide some metadata for search engines feel free to add a few
+  # information about you and your website.
+  name = "Helena Fogelberg"
+  description = "Pet portraits and animal paintings by comission."
+
+  # Link custom assets relative to /static
+  custom_css = []
+  custom_js  = []
+  favicon    = "favicon.ico"
+
+  # Possibility to disable external/additional fonts
+  # Exception: Fontawesome
+  disableFonts = false
+
+  # 404 error customization
+  [params.error404]
+    heading = "Page couldn't be found"
+    text = "Please visit [http://puppaint.com]"
+
+  # Optional piwik tracking
+  #[params.analytics.piwik]
+  #  URL = "https://stats.example.com"
+  #  ID = "42"
+  #  # Track all subdomains with "*.example.com"
+  #  domain = "www.example.com"
+  #  # Optional integrity check hash
+  #  hash = "sha512-RfeD0pacGTqy9m7U6PgehQfS4cc7SIt+e+P+H5e848kEvB/RW84CUGO3O4O3LNbxjevym6KPUZ8muPsMrI8WIw=="
+
+  # Navigation
+  [params.navigation]
+    brand = "Puppaint"
+    # Optional logo as brand stored in img/
+    #logo = "logo.svg"
+    about = "About"
+    services = "Services"
+    portfolio = "Portfolio"
+    contact = "Contact"
+
+  # Hero section
+  [params.hero]
+    # To change the background image of the hero, replace 'header-bg.jpg' in
+    # the 'static/img' folder.
+    title = "Welcome To The Pup Painter!"
+    subtitle = "It's nice to meet you"
+    buttonText = "Tell me more"
+
+  # About section
+  [params.about]
+    enable = true
+    title = "About"
+    subtitle = "Helena the pup painter"
+    endpoint = "Let<br> me help<br> you"
+
+    # The events will be listed from the top to the bottom.
+    # All images are stored under 'static/img/about'.
+    # Replace them with your own.
+    [[params.about.events]]
+      title = "Hello"
+      img="helena.jpg"
+      description = "My name is Helena and I live in Tenerife with my family: I've always loved to paint."
+
+    [[params.about.events]]
+      title = "Pet portraits"
+      img="bird.jpg"
+      description = "I have a passion for animals so obviously I combine my interests and paint animals.  Do you, your children or a friend who you want to give a present have an animal you want a portrait of? Send me a message and I will help you!"
+
+
+
+  # Services section
+  [params.services]
+    enable = true
+    title = "How I work"
+
+    [[params.services.row]]
+
+    [[params.services.row.list]]
+      icon = "fa-camera"
+      title = ""
+      description = "Send a main photo of your animal plus several additional photos from all possible angels. The eyes are especially important. Let me know what size and technique you want."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-dollar"
+      title = ""
+      description = "I'll let you know what the painting will cost. The prices start at 50€ for a small watercolor."
+      url = "#"
+
+    [[params.services.row.list]]
+      icon = "fa-paint-brush"
+      title = ""
+      description = "I'll send you a photo when I'm close to finishing. Let me know what you think and if you want any adjustments."
+      url = "#"
+    
+    [[params.services.row.list]]
+      icon = "fa-envelope"
+      title = ""
+      description = "And finally I'll sent the painting to you."
+      url = "#"
+
+  # Portfolio section
+  [params.portfolio]
+    enable = true
+    # All projects defined in their own files. You can find example projects
+    # at 'exampleSite/data/projects'. Copy the 'projects' folder into the 'data' directory
+    # at the root of this Hugo site.
+    # For more informtion take a look at the README.
+    title = "Portfolio"
+    subtitle = "Some of my sample work"
+
+    [params.portfolio.modal]
+      client = "Client"
+      date = "Date"
+      category = "Category"
+      buttonText = "Close"
+
+
+ 
+  # Contact section
+  [params.contact]
+    enable = true
+    title = "Contact me"
+    subtitle  = "Ask me about my services. Or just say hello!"
+    buttonText = "Send message"
+
+    # Since this template is static, the contact form uses www.formspree.io as a
+    # proxy. The form makes a POST request to their servers to send the actual
+    # email. Visitors can send up to a 1000 emails each month for free.
+    #
+    # What you need to do for the setup?
+    #
+    # - set your email address under 'email' below
+    # - upload the generated site to your server
+    # - send a dummy email yourself to confirm your account
+    # - click the confirm link in the email from www.formspree.io
+    # - you're done. Happy mailing!
+
+    # It is possible to substitute formspring with other providers
+    # as an example the mailout plugin from caddy.
+    # Provide the post URL for the form and depending on the provider
+    # add some custom JS script to finish the implementation.
+    # postURL = "https://example.com/mailout/"
+
+    email = "helena.d.fogelberg@gmail.com"
+
+    # Success and error message overwrite for async contact form
+    #thanks = "Thank you for awesomely contacting us."
+    #error = "Message could not be send. Please contact us at mail@example.com instead."
+
+    # 'warning' defines error messages for invalid inputs
+    [params.contact.form.name]
+      text = "Your Name *"
+      warning = "Please enter your name."
+
+    [params.contact.form.email]
+      text = "Your Email *"
+      warning = "Please enter your email address."
+
+    [params.contact.form.phone]
+      text = "Your Phone *"
+      warning = "Please enter your phone number."
+
+    [params.contact.form.message]
+      text = "Your Message *"
+      warning = "Please enter a message."
+
+      # Add optional form fields to identify contact forms
+      #[[params.contact.form.hidden]]
+      #  name = "someID"
+      #  value = "example.com"
+      #
+      #[[params.contact.form.hidden]]
+      # Special values for name such as "page" and "site" will be autofilled
+      #  name = "page"
+
+  # Footer section
+  [params.footer]
+    enable = true
+    copyright = "Published under the Apache License 2.0."
+
+    [[params.footer.social]]
+      icon = "fa-instagram"
+      link = "#"
+
+    [[params.footer.social]]
+      icon = "fa-facebook"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "Privacy Policy"
+      link = "#"
+
+    [[params.footer.quicklinks]]
+      text = "Terms of Use"
+      link = "#"
