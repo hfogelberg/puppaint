@@ -1,5 +1,5 @@
 # Site settings
-baseurl = "https://puppaint.com"
+baseurl = "/"
 languageCode = "en-us"
 title = "Puppaint"
 theme = "agency"
@@ -77,9 +77,9 @@ googleAnalytics = "UA-105800567-1"
       description = "My name is Helena and I live in Tenerife with my family: I've always loved to paint."
 
     [[params.about.events]]
-      title = "Pet portraits"
+      title = "Pet and Animal Portraits"
       img="bird.jpg"
-      description = "I have a passion for animals so obviously I combine my interests and paint animals.  Do you, your children or a friend who you want to give a present have an animal you want a portrait of? Send me a message and I will help you!"
+      description = "I have a passion for animals so obviously I combine my interests and paint animals.  Do you have an animal you want a portrait of? Or perhaps give somebody with an animal a present? Send me a message and I will help you!"
 
 
 
@@ -107,7 +107,7 @@ googleAnalytics = "UA-105800567-1"
       title = ""
       description = "I'll send you a photo when I'm close to finishing. Let me know what you think and if you want any adjustments."
       url = "#"
-    
+
     [[params.services.row.list]]
       icon = "fa-envelope"
       title = ""
@@ -131,7 +131,7 @@ googleAnalytics = "UA-105800567-1"
       buttonText = "Close"
 
 
- 
+
   # Contact section
   [params.contact]
     enable = true
@@ -203,9 +203,9 @@ googleAnalytics = "UA-105800567-1"
       link = "#"
 
     [[params.footer.quicklinks]]
-      text = "Privacy Policy"
-      link = "#"
+      text = "Written by Henrik Fogelberg"
+      link = "https://henrikfogelberg.com"
 
     [[params.footer.quicklinks]]
-      text = "Terms of Use"
-      link = "#"
+      text = "© Helena Fogelberg Art"
+      link = "https://helenafogelberg.com"
