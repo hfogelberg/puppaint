@@ -57,7 +57,7 @@ googleAnalytics = "UA-105800567-1"
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "Welcome To The Pup Painter!"
+    title = "Welcome To Puppainter!"
     subtitle = "It's nice to meet you"
     buttonText = "Tell me more"
 
@@ -93,7 +93,7 @@ googleAnalytics = "UA-105800567-1"
     [[params.services.row.list]]
       icon = "fa-camera"
       title = ""
-      description = "Send a main photo of your animal plus several additional photos from all possible angels. The eyes are especially important. Let me know what size and technique you want."
+      description = "Send a photo of your animal. The eyes are especially important. Let me know what size you want."
       url = "#"
 
     [[params.services.row.list]]
@@ -160,8 +160,8 @@ googleAnalytics = "UA-105800567-1"
     email = "helena.d.fogelberg@gmail.com"
 
     # Success and error message overwrite for async contact form
-    #thanks = "Thank you for awesomely contacting us."
-    #error = "Message could not be send. Please contact us at mail@example.com instead."
+    thanks = "Thank you for contacting me!"
+    error = "Message could not be send. Please contact message at helena.d.fogelberg@gmail.com instead."
 
     # 'warning' defines error messages for invalid inputs
     [params.contact.form.name]
@@ -171,10 +171,6 @@ googleAnalytics = "UA-105800567-1"
     [params.contact.form.email]
       text = "Your Email *"
       warning = "Please enter your email address."
-
-    [params.contact.form.phone]
-      text = "Your Phone *"
-      warning = "Please enter your phone number."
 
     [params.contact.form.message]
       text = "Your Message *"
