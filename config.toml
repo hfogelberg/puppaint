@@ -57,7 +57,7 @@ googleAnalytics = "UA-105800567-1"
   [params.hero]
     # To change the background image of the hero, replace 'header-bg.jpg' in
     # the 'static/img' folder.
-    title = "Welcome To Puppainter!"
+    title = "Welcome To Puppaint!"
     subtitle = "It's nice to meet you"
     buttonText = "Tell me more"
 
@@ -99,7 +99,7 @@ googleAnalytics = "UA-105800567-1"
     [[params.services.row.list]]
       icon = "fa-dollar"
       title = ""
-      description = "I'll let you know what the painting will cost. The prices start at 50€ for a small watercolor."
+      description = "I'll let you know what the painting will cost. The prices start at 50€ for a standard sized watercolor."
       url = "#"
 
     [[params.services.row.list]]
@@ -199,9 +199,9 @@ googleAnalytics = "UA-105800567-1"
       link = "#"
 
     [[params.footer.quicklinks]]
-      text = "Written by Henrik Fogelberg"
+      text = "Henrik Fogelberg"
       link = "https://henrikfogelberg.com"
 
-    [[params.footer.quicklinks]]
-      text = "© Helena Fogelberg Art"
-      link = "https://helenafogelberg.com"
+#    [[params.footer.quicklinks]]
+#      text = "© Helena Fogelberg Art"
+#      link = "https://helenafogelberg.com"
